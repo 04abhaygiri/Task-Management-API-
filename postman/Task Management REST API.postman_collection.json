@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "ec5cd16a-90ab-44b7-b17d-f0f88bb25df7",
+		"name": "Task Management REST API",
+		"description": "This Postman collection demonstrates a Task Management REST API built using Node.js, Express.js, and MongoDB. The API supports full CRUD operations with validation and error handling following MVC architecture.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50085214",
+		"_collection_link": "https://abhaygiri04-9013689.postman.co/workspace/ef4d4290-6c4b-4a42-8c72-bd2d5415fdbc/collection/50085214-ec5cd16a-90ab-44b7-b17d-f0f88bb25df7?action=share&source=collection_link&creator=50085214"
+	},
+	"item": [
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"First Task\",\r\n  \"description\": \"Created from Postman\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated Task\",\r\n  \"description\": \"Updated via Postman\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/694fddfefc2a70902f009e23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"694fddfefc2a70902f009e23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/694fddfefc2a70902f009e23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"694fddfefc2a70902f009e23"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
